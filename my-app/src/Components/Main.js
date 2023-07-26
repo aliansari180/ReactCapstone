@@ -1,7 +1,7 @@
 import burger from './assets/burger.jpg'
 import salad from './assets/OIP.jpg'
 import vegetable from './assets/vegetables.jpg'
-import './Main.css'
+import './imp.css'
 
 function Main(params) {
     return(

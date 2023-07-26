@@ -1,6 +1,6 @@
 
 import C from './assets/C.jpg'
-import './Header.css'
+import './imp.css'
 
 function Header() {
     return(

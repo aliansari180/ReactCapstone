@@ -1,6 +1,8 @@
 import React from 'react'
 import navimg from './assets/navimg (1).png'
-import './Nav.css'
+import './imp.css'
+import { Link } from "react-router-dom";
+
 
 function Nav() {
     return(
@@ -8,12 +10,12 @@ function Nav() {
         <nav>
       <ul>
         <img src={navimg} width={200} />
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">Reservations</a></li>
-        <li><a href="#">Order Online</a></li>
-        <li><a href="#">Login</a></li>
+        <li><Link to="/" class="active">Home</Link></li>
+        <li><Link to="/Main">About</Link></li>
+        <li><Link to="/Main">Menu</Link></li>
+        <li><Link to="/Main">Reservations</Link></li>
+        <li><Link to="/Footer">Order Online</Link></li>
+        <li><Link to="/">Login</Link></li>
       </ul>
     </nav>
     );

@@ -9,7 +9,7 @@ function Header() {
             <h2>Chicago</h2>
             <img src={C} width={400} alt="Mediteranian food"  />
             <h4>We are a family owned ,Mediteranian resturand based on traditional recipes served with a modern twist</h4>
-            <button type="submit">Reserve a table</button>
+            <button type="submit" >Reserve a table</button>
         </header>
 
     );

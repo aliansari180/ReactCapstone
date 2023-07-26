@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #4a4949;
+    background-color: #d3d617;
   }
 
   /* Nav.css */
@@ -45,7 +45,7 @@ body {
   header {
     text-align: center;
     padding: 40px 0;
-    background-color: #3498db;
+    background-color: #d3d617;
     color: #fff;
   }
 
@@ -202,3 +202,100 @@ body {
       margin: 10px 0;
     }
   }
+
+
+ /* CSS for the BookingForm component */
+
+
+
+form {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  display: grid;
+  align-items: center;
+  max-width: 400px;
+  gap: 50px;
+  padding: 100px;
+  border: 2px solid #00b3ff;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="date"],
+select,
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M2.1 4.92l1.45 1.46c1.8-1.63 4.13-2.6 6.57-2.6 2.34 0 4.51.97 6.08 2.53l1.45-1.46C15.68 2.68 13.07 1.5 10 1.5 6.37 1.5 3.14 3.78 2.1 4.92zM12 6c-3.04 0-5.8 1.59-7.36 4.2C4.2 11.16 5.85 10.5 7 10.5c2.34 0 4.31 1.53 5.02 3.63 1.07-.35 2.22-.53 3.41-.53 1.16 0 2.24.2 3.23.53 1.58-2.58 4.32-4.36 7.77-4.77C22.8 7.5 20.2 6 17.2 6H12z'/%3E%3C/svg%3E");
+  background-size: 14px;
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f1356d;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #e4005f;
+}
+
+/* Animation styles */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Apply animations to form elements */
+
+form label,
+form input,
+form select,
+form input[type="submit"] {
+  animation: fadeIn 0.6s ease;
+}
+
+form input[type="submit"] {
+  animation: slideInRight 0.6s ease;
+}

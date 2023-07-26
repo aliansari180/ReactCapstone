@@ -13,7 +13,7 @@ function Nav() {
         <li><Link to="/" class="active">Home</Link></li>
         <li><Link to="/Main">About</Link></li>
         <li><Link to="/Main">Menu</Link></li>
-        <li><Link to="/Main">Reservations</Link></li>
+        <li><Link to="/BookingPage">Reservations</Link></li>
         <li><Link to="/Footer">Order Online</Link></li>
         <li><Link to="/">Login</Link></li>
       </ul>
